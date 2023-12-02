@@ -9,6 +9,10 @@ import {
   initiatestnetAssets,
 } from "lib/chain-registry/initiatestnet";
 import {
+  localbostrom,
+  localbostromAsset,
+} from "lib/chain-registry/localbostrom";
+import {
   localosmosis,
   localosmosisAsset,
 } from "lib/chain-registry/localosmosis";
@@ -41,9 +45,17 @@ export const ChainProvider = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <Provider
-      chains={[...chains, localosmosis, sei, terra2testnet, ...initiatestnet]}
+      chains={[
+        ...chains,
+        localosmosis,
+        localbostrom,
+        sei,
+        terra2testnet,
+        ...initiatestnet,
+      ]}
       assetLists={[
         ...assets,
+        localbostromAsset,
         localosmosisAsset,
         seiAssets,
         terra2testnetAssets,

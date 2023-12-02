@@ -39,6 +39,8 @@ export const CURR_THEME = (() => {
   switch (process.env.NEXT_PUBLIC_THEME) {
     case "osmosis":
       return OSMOSIS_THEME;
+    case "localbostrom":
+      return OSMOSIS_THEME;
     case "sei":
       return SEI_THEME;
     case "initia":

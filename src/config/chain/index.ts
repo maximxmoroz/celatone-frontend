@@ -1,4 +1,5 @@
 import { INITIA_CHAIN_CONFIGS } from "./initia";
+import { LOCALBOSTROM_CHAIN_CONFIGS } from "./localbostrom";
 import { NEUTRON_CHAIN_CONFIGS } from "./neutron";
 import { OSMOSIS_CHAIN_CONFIGS } from "./osmosis";
 import { SEI_CHAIN_CONFIGS } from "./sei";
@@ -16,4 +17,5 @@ export const CHAIN_CONFIGS: ChainConfigs = {
   ...STARGAZE_CHAIN_CONFIGS,
   ...TERRA_CHAIN_CONFIGS,
   ...INITIA_CHAIN_CONFIGS,
+  ...LOCALBOSTROM_CHAIN_CONFIGS,
 };
